@@ -109,6 +109,7 @@ function controls() {
 		//else if it's stop button
 	} else if (this.innerHTML === "Stop") {
 		//everythings back to regular
+		clicked = true;
 		stopwatch.className = "stopwatch";
 		minutes.innerHTML = sessionHour.innerHTML;
 		mins = sessionHour.innerHTML;
