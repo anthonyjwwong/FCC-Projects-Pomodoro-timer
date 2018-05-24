@@ -8,7 +8,9 @@ h1 {
   font-weight: 300;
 }
 
-
+span {
+  cursor:pointer
+}
 
 .stopwatch {
   text-align: center;
