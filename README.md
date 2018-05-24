@@ -8,3 +8,5 @@ It is basically a timer that alternates between work session and breaks
 2. set break length
 3. start it.
 
+
+try it out here https://anthonyjwwong.github.io/pomodoro_timer/
