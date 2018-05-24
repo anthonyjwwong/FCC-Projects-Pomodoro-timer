@@ -110,6 +110,11 @@ function controls() {
 	} else if (this.innerHTML === "Stop") {
 		//everythings back to regular
 		clicked = true;
+		//enable all the adding and removing
+		breakRemove.classList.remove("disabled");
+		add.classList.remove("disabled");
+		remove.classList.remove("disabled");
+		breakAdd.classList.remove("disabled");
 		stopwatch.className = "stopwatch";
 		minutes.innerHTML = sessionHour.innerHTML;
 		mins = sessionHour.innerHTML;
