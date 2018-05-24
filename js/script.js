@@ -49,26 +49,23 @@ function start() {
 		}
 	}
 
-	//if minutes and seconds are 0//
-	if (mins === 0 && secs === 0) {
-		//and if current stopwatch is on session,
-		if (stopwatchtitle.innerHTML = "Session") {
+	//and if current stopwatch is on session,
+		if (mins === 0 && secs === 0 && stopwatchtitle.innerHTML === "Session") {
 			//turns it into the break stopwatch instead
 			minutes.innerHTML = breakHour.innerHTML;
 			alert("Break is starting");
 			stopwatchtitle.innerHTML = "Break";
-			stopwatchtitle.classList.add("red")
+
 			mins = parseInt(breakHour.innerHTML);
 			//or else if its on break
-	} else if (stopwatchtitle.innerHTML = 'Break') {
+		} else if (mins === 0 && secs === 0 && stopwatchtitle.innerHTML === 'Break') {
 			//vice versa
 			minutes.innerHTML = sessionHour.innerHTML;
 			alert("Session is starting");
-			stopwatchtitle.classList.add("green");
+	
 			stopwatchtitle.innerHTML = "Session";
 			mins = parseInt(sessionHour.innerHTML);
-	}
-}
+ 	}
 }
 
 //function for clickedButton
