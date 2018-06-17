@@ -1,6 +1,6 @@
 # Pomodoro Timer
 ## Pomodoro clock
-This is a project from freecodecamp//
+This is a project from freecodecamp
 
 ## Usage
 It is basically a timer that alternates between work session and breaks
@@ -10,4 +10,4 @@ It is basically a timer that alternates between work session and breaks
 
 
 
-try it out here https://anthonyjwwong.github.io/pomodoro_timer/
+try it out here  <br>https://anthonyjwwong.github.io/FCC-Projects-Pomodoro-timer/
