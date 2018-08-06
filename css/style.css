@@ -1,10 +1,30 @@
-body {
-  font-family: 'Ubuntu', sans-serif;
-  background: #43464b;
-  color: white;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: #43464b;
+  color: white;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  background-color: #708090;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title h1 {
+  font-size: 1.5rem;
+  padding: 10px 0;
+  text-align: center;
   font-weight: 300;
 }
 
@@ -12,37 +32,88 @@ span {
   cursor:pointer
 }
 
+.timers {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 10% auto;
+}
+
+.timers h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.timers p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.stopwatch h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 75px;
+}
+
+.stopwatch p {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
 .stopwatch {
   text-align: center;
   border: 1px solid white;
-  padding: 45px 40px 40px;
-  border-radius: 100px;
-  height: 120px;
-  width: 120px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
   margin: 5px auto 20px;
   line-height: 20px;
   background: #3c3f43;
+}
+
+
+.stopwatchgreen h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 75px;
+}
+
+.stopwatchgreen p {
+  font-size: 1.5rem;
+  padding-top: 10px;
 }
 
 .stopwatchgreen {
   text-align: center;
   border: 1px solid #91c465;
-  padding: 45px 40px 40px;
-  border-radius: 100px;
-  height: 120px;
-  width: 120px;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
   margin: 5px auto 20px;
   line-height: 20px;
   background: #3c3f43;
 }
 
+
+.stopwatchred h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 75px;
+}
+
+.stopwatchred p {
+  font-size: 1.5rem;
+  padding-top: 10px;
+}
+
 .stopwatchred {
   text-align: center;
   border: 1px solid red;
-  padding: 45px 40px 40px;
-  border-radius: 100px;
-  height: 120px;
-  width: 120px;
+  border-radius: 50%;
+
+  height: 200px;
+  width: 200px;
   margin: 5px auto 20px;
   line-height: 20px;
   background: #3c3f43;
@@ -54,28 +125,17 @@ span {
   border: none;
 }
 
-.title {
-  text-align: center;
-
-}
-
-.timers {
-  display: flex;
-  justify-content: space-between;
-  width: 60vw;
-  margin: 0 auto;
-}
 
 button {
-  border: none;
+  border: 1px solid white;
   outline: none;
   background: inherit;
   font-family: "Ubuntu", sans-serif;
-  font-size: 1.3em;
-  font-weight: 300;
+  font-size: 1.1em;
+  font-weight: 200;
   color: white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 5px;
+  padding: 8px 10px;
 }
 
 .button {
@@ -101,225 +161,119 @@ button {
   margin-bottom: 10px;
 
 }
-/*****************************
-  Media Query
-***************************/
-@media only screen and (min-width: 321px) {
-  .pomodoro {
-    font-size: 2.5em;
-  }
-
-  .session p {
-    font-size: 1.8em;
-  }
-
-  .break p {
-    font-size: 1.8em;
-  }
-
-  .stopwatch {
-    padding: 55px;
-    border-radius: 125px;
-    height: 150px;
-    width: 150px;
-  }
-
-  .stopwatchgreen {
-    padding: 55px;
-    border-radius: 125px;
-    height: 150px;
-    width: 150px;
-  }
-
-  .stopwatchred {
-    padding: 55px;
-    border-radius: 125px;
-    height: 150px;
-    width: 150px;
-  }
-
-  .stopwatch h1 {
-    font-size: 2.1em;
-    margin-top: 40px;
-  }
-
-  .stopwatchred h1 {
-      font-size: 2.1em;
-      margin-top: 40px;
-  }
-
-  .stopwatchgreen h1 {
-    font-size: 2.1em;
-    margin-top: 40px;
-  }
-
-  .button button {
-    font-size: 1.8em;
-    margin-top: 30px;
-  }
-  }
-
 
 @media only screen and (min-width: 600px) {
-  .pomodoro {
-    font-size: 3.5em;
-  }
+  
+.timers {
+  width: 50%;
+  margin-bottom: 8%;
+}
 
-  .session p {
-    font-size: 2.6em;
-  }
+.timers h2 {
+  font-size: 1.8rem;
 
-  .break p {
-    font-size: 2.6em;
-  }
+}
 
-  .stopwatch {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
+.timers p {
+  font-size: 1.6rem;
+}
+  
+  .stopwatch, .stopwatchgreen, .stopwatchred {
+    height: 300px;
     width: 300px;
   }
 
-  .stopwatchgreen {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatchred {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatch h1 {
-    font-size: 3em;
-    padding-top: 30px;
-  }
-
-  .stopwatchgreen h1 {
-     font-size: 3em;
-      padding-top: 30px;
-    }
-
-  .stopwatchred h1 {
-      font-size: 3em;
-      padding-top: 30px;
-    }
-
-  .button button {
-    font-size: 2.8em;
-    margin-top: 30px;
+  .stopwatch h2, .stopwatchred h2, .stopwatchgreen h2 {
+    margin-top: 135px;
+    font-size: 2rem;
+  }  
+  
+  .stopwatch p, .stopwatchred p, .stopwatchgreen p {
+    font-size: 2rem;
+  }  
+  
+  button {
+    font-size: 1.4rem;
   }
 }
 
-@media only screen and (min-width: 600px) {
-
-  .session p {
-    font-size: 2.6em;
+@media only screen and (min-width: 750px) {
+  
+  .title h1 {
+    font-size: 2rem;
   }
 
-  .break p {
-    font-size: 2.6em;
-  }
-
-  .stopwatch {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatchgreen {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatchred {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatch h1 {
-    font-size: 3em;
-    padding-top: 35px;
-  }
-
-  .stopwatchgreen h1 {
-     font-size: 3em;
-      padding-top: 35px;
-    }
-
-  .stopwatchred h1 {
-      font-size: 3em;
-      padding-top: 35px;
-    }
-
-  .button button {
-    font-size: 2.8em;
-    margin-top: 30px;
-  }
-}
-
-
-@media only screen and (min-width: 1200px) {
   .timers {
-    width: 25vw;
+    margin-top: 5%;
+    width: 350px;
   }
-
-
-  .session p {
-    font-size: 2.6em;
-  }
-
-  .break p {
-    font-size: 2.6em;
-  }
-
-  .stopwatch {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatchgreen {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatchred {
-    padding: 55px;
-    border-radius: 270px;
-    height:300px;
-    width: 300px;
-  }
-
-  .stopwatch h1 {
-    font-size: 3em;
-    padding-top: 40px;
-  }
-
-  .stopwatchgreen h1 {
-     font-size: 3em;
-      padding-top: 40px;
+  
+    button {
+      font-size: 1.4rem;
+      margin-top: 30px;
     }
-
-  .stopwatchred h1 {
-      font-size: 3em;
-      padding-top: 40px;
-    }
-
-  .button button {
-    font-size: 2.3em;
-    margin-top: 30px;
   }
-}
+  
+  @media only screen and (min-width: 1050px) {
+  
+    .title h1 {
+      font-size: 2rem;
+    }
+  
+    .timers {
+      margin-top: 5%;
+      margin-bottom: 3%;
+      width: 450px;
+    }
+        
+        .stopwatch, .stopwatchgreen, .stopwatchred {
+          height: 400px;
+          width: 400px;
+        }
+      
+        .stopwatch h2, .stopwatchred h2, .stopwatchgreen h2 {
+          margin-top: 185px;
+          font-size: 2rem;
+        }  
+        
+        .stopwatch p, .stopwatchred p, .stopwatchgreen p {
+          font-size: 2rem;
+        }  
+        
+
+    }
+    
+    @media only screen and (min-width: 1350px) {
+  
+      .title h1 {
+        font-size: 2rem;
+      }
+    
+      .timers {
+        margin-top: 2%;
+        margin-bottom: 5%;
+        width: 450px;
+      }
+
+
+
+          .stopwatch, .stopwatchgreen, .stopwatchred {
+            height: 400px;
+            width: 400px;
+            margin-bottom: 5%;
+          }
+        
+          .stopwatch h2, .stopwatchred h2, .stopwatchgreen h2 {
+            margin-top: 185px;
+            font-size: 2rem;
+          }  
+          
+          .stopwatch p, .stopwatchred p, .stopwatchgreen p {
+            font-size: 2rem;
+          }  
+          
+          button {
+            margin: 0 30px;
+          }
+      }
+          
